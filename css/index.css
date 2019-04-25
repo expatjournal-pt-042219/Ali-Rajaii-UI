@@ -1,122 +1,3 @@
-html {
-  background-color: blue;
-  font-size: 62.5%;
-  width: 100%;
-}
-.modo {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 30px;
-}
-.modo h3 {
-  margin-bottom: 15px;
-}
-.picpara {
-  font-size: 1.5rem;
-  color: white;
-  margin-top: 30px;
-}
-.picpara h3 {
-  margin-bottom: 15px;
-}
-.adventure img {
-  width: 100%;
-}
-.worldPic {
-  height: 500px;
-  width: 100%;
-}
-.essence p {
-  font-size: 1.5rem;
-  text-align: center;
-  color: purple;
-}
-.choose p {
-  font-size: 4rem;
-  text-align: center;
-  color: white;
-}
-.maps {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.maps .northAmerica img {
-  width: 560px;
-  height: 400px;
-}
-.maps .southAmerica img {
-  width: 560px;
-  height: 400px;
-}
-.maps .europe img {
-  width: 560px;
-  height: 400px;
-}
-.maps .africa img {
-  width: 560px;
-  height: 400px;
-}
-.maps .asia img {
-  width: 560px;
-  height: 400px;
-}
-.maps .australia img {
-  width: 560px;
-  height: 400px;
-}
-.maps .antarctica img {
-  width: 560px;
-  height: 400px;
-}
-.homeheader {
-  background-color: grey;
-  display: flex;
-  height: 100px;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-  align-items: flex-end;
-  position: sticky;
-  z-index: 100;
-  top: 0;
-}
-.homeheader a {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  margin-right: 15px;
-}
-.homeheader1 a {
-  font-size: 1.5rem;
-  margin-right: 15px;
-}
-.teamIntro {
-  font-size: 1.5rem;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.teamIntro h1 {
-  margin-bottom: 10px;
-}
-.teamTable {
-  background-color: white;
-  width: 500px;
-}
-.teamTable h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-.teamTable h5 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.teamTable li {
-  font-size: 1.75rem;
-}
-.teamTable ul.square {
-  list-style: square;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -244,4 +125,179 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+html {
+  background-color: #060089;
+  font-size: 62.5%;
+  width: 100%;
+}
+.modo {
+  font-size: 4rem;
+  color: white;
+  padding-top: 500px;
+}
+.modo h3 {
+  text-align: center;
+  margin-top: 200px;
+}
+.parralax1 {
+  background-image: url('../img/pexels-expat-adventure-photo.jpeg');
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 200px;
+}
+@media (max-width: 500px) {
+  .parralax1 {
+    margin-top: 0px;
+    height: 500px;
+  }
+}
+.parralax2 {
+  background-image: url('../img/europe.jpeg');
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.parralax3 {
+  background-image: url('../img/photo-1554446977-558193aaeb5b.jpg');
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.picpara {
+  padding-top: 500px;
+  color: white;
+}
+@media (max-width: 500px) {
+  .picpara {
+    padding-top: 250px;
+  }
+}
+.picpara p {
+  font-size: 4rem;
+  text-align: center;
+}
+.midsect {
+  color: white;
+}
+.midsect h3 {
+  font-size: 4rem;
+}
+.midsect p {
+  font-size: 2.5rem;
+}
+.adventure p {
+  color: white;
+  font-size: 4rem;
+  padding-top: 500px;
+  text-align: center;
+}
+.copyright {
+  height: 46px;
+  background-color: #ffd700;
+}
+.copyright p {
+  font-size: 4rem;
+  text-align: center;
+}
+.homeheader {
+  background-color: #e5e5e5;
+  display: flex;
+  height: 100px;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+@media (max-width: 500px) {
+  .homeheader {
+    position: relative;
+    z-index: 0;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.homeheader a {
+  text-decoration: none;
+  color: black;
+  font-size: 4rem;
+  margin-right: 15px;
+}
+@media (max-width: 500px) {
+  .homeheader {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .topanchorset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .topanchorset a {
+    width: 100%;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 500px) {
+  .bottomanchorset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .bottomanchorset a {
+    width: 100%;
+    border: 1px solid black;
+  }
+}
+.homeheader1 a {
+  font-size: 3rem;
+  margin-right: 15px;
+}
+.teamIntro {
+  font-size: 3rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.teamIntro h1 {
+  margin-bottom: 10px;
+}
+.teamTable {
+  background-color: white;
+  width: 500px;
+}
+.teamTable h3 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.teamTable h5 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.teamTable li {
+  font-size: 3.5rem;
+  padding-left: 25px;
+}
+.teamTable ul li {
+  list-style: square inside;
+  margin-left: 20px;
+  padding-left: 0px;
 }
