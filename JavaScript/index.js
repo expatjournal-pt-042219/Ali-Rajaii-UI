@@ -5,6 +5,15 @@ anchorSelector.forEach(a => a.addEventListener('mouseover',
     e.target.style.color = 'white';
 }));
 
+let anchorSelectorAlert = [];
+anchorSelectorAlert.push(anchorSelector[2]);
+anchorSelectorAlert.push(anchorSelector[3]);
+anchorSelectorAlert.push(anchorSelector[4]);
+console.log(anchorSelectorAlert);
+anchorSelectorAlert.map(a => {
+    a.addEventListener('click', e => alert('You do not have permission to access this part of the site.  Boolean thunder error 55-63d.  Contact adminstration for further assistance.'))
+})
+
 let aboveParaSelector = document.querySelector('.abovepara');
 aboveParaSelector.addEventListener('mouseover', (e) => {
     e.target.style.backgroundColor = '#060089';
@@ -59,7 +68,6 @@ function sweepStakesOnce() {
 }
 
 picparaSelector.addEventListener('click', sweepstakes)
-
 
 
 
