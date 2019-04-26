@@ -8,26 +8,41 @@
     position: sticky;
     z-index: 100;
     top: 0;
+
+    @media @tablet {
+        flex-direction: row;
+        align-items: center;
+        }
+
     @media @mobile {
         position: relative;
         z-index: 0;
         flex-direction: column;
         height: 100%;
     }
+    
     a {
         text-decoration: none;
         color: black;
         font-size: 4rem;
         margin-right: 15px;
-        
+
+    @media @desktop {
+        font-size: 3rem;
     }
+        
+    @media @tablet {
+            font-size: 2rem;
+        }
     @media @mobile {
         text-align: center;
         width: 100%;
-        
-    }
+        }
+    
+}}
 
-}
+
+
 
 .topanchorset {
     @media @mobile {
@@ -61,4 +76,78 @@
         font-size: 3rem;
         margin-right: 15px;
     }
+}
+
+.homeheader1 {
+    background-color: #e5e5e5;
+    display: flex;
+    height: 100px;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    @media @desktop {
+        width: 100%;
+    }
+
+    @media @tablet {
+        flex-direction: row;
+        align-items: center;
+        }
+
+    @media @mobile {
+        position: relative;
+        z-index: 0;
+        flex-direction: column;
+        height: 100%;
+        width: 500px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 4rem;
+        margin-right: 15px;
+
+    @media @desktop {
+        font-size: 3rem;
+    }
+        
+    @media @tablet {
+            font-size: 2rem;
+        }
+    @media @mobile {
+        text-align: center;
+        width: 100%;
+        }
+    
+}}
+.topanchorset1 {
+    @media @mobile {
+        display: flex;
+        flex-direction: column;     
+        width: 100%;
+    }
+    a {
+        @media @mobile {
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+}
+.bottomanchorset1 {
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    a {
+        @media @mobile {
+            width: 100%;
+            border: 1px solid black;
+        }
+}
 }

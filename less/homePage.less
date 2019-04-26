@@ -17,7 +17,19 @@ html {
     
     }
 }
-
+.abovepara {
+    height: 200px;
+    font-size: 3.35rem;
+    color: white;
+    padding-top: 133px;
+    text-align: center;
+    @media @tablet {
+        display: none;
+    }
+    @media @mobile {
+        display: none;
+    }
+}
 .parralax1 {
         background-image:url('../img/pexels-expat-adventure-photo.jpeg');
         min-height: 1000px;
@@ -26,13 +38,19 @@ html {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        margin-top: 200px;
+        //margin-top: 200px;
 
         @media @mobile {
             margin-top: 0px;
             height: 500px;
         }
     }
+
+.parralax1 {
+    @media @tablet {
+        margin-top: 0px;
+    }
+}
 
 
 .parralax2 {
