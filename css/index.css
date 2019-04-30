@@ -232,6 +232,25 @@ html {
   font-size: 4rem;
   text-align: center;
 }
+.maps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.maps .map img {
+  width: 560px;
+  height: 400px;
+}
+.choose {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+.button {
+  font-size: 3rem;
+  color: red;
+  text-align: center;
+}
 .homeheader {
   background-color: #e5e5e5;
   display: flex;

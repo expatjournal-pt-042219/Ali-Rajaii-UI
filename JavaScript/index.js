@@ -70,11 +70,44 @@ function sweepStakesOnce() {
 picparaSelector.addEventListener('click', sweepstakes)
 
 
+class PlaceButton {
+    constructor(buttonElement) {
+        this.buttonElement = buttonElement;
+        this.placeData = this.buttonElement.dataset.place;
+
+        if (this.placeData === 'all') {
+            this.maps = document.querySelectorAll('.map');
+        } else {
+            this.maps = document.querySelectorAll(`.map[data-place='${this.placeData}']`);
+        }
+        
+        this.maps = Array.from(this.maps).map(map => new PlaceMap(map));
+        this.buttonElement.addEventListener('click', this.handleClick.bind(this));
+    }
+        handleClick() {
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => button.classList.remove('active-button'));
+            const maps = document.querySelectorAll('.map');
+            maps.forEach(map => map.style.display = 'none');
+            this.buttonElement.classList.add('active-button');
+            this.maps.forEach(map => map.selectMap());
+        }
+
+}
+
+class PlaceMap {
+    constructor(mapElement) {
+        this.mapElement = mapElement;
+    }
+    selectMap() {
+        this.mapElement.style.display = 'flex';
+    }
+}
 
 
 
-
-
+let buttonSelector = document.querySelectorAll('.button');
+buttonSelector.forEach(button => new PlaceButton(button));
 
 
 
