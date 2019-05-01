@@ -435,7 +435,7 @@ html {
 }
 @media (max-width: 500px) {
   .teamTable h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 .teamTable h5 {
@@ -450,7 +450,7 @@ html {
 }
 @media (max-width: 500px) {
   .teamTable h5 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 .teamTable li {
@@ -464,7 +464,7 @@ html {
 }
 @media (max-width: 500px) {
   .teamTable li {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 .teamTable ul li {
@@ -484,7 +484,7 @@ html {
 }
 @media (max-width: 500px) {
   .ourlinks .linktext {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 .ourlinks a {
@@ -494,7 +494,7 @@ html {
 }
 @media (max-width: 500px) {
   .ourlinks a {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 .symbolwrap {

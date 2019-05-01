@@ -10,9 +10,13 @@ anchorSelectorAlert.push(anchorSelector[2]);
 anchorSelectorAlert.push(anchorSelector[3]);
 anchorSelectorAlert.push(anchorSelector[4]);
 console.log(anchorSelectorAlert);
-anchorSelectorAlert.map(a => {
-    a.addEventListener('click', e => alert('You do not have permission to access this part of the site.  Boolean thunder error 55-63d.  Contact adminstration for further assistance.'))
-})
+anchorSelectorAlert.map(anchor => {
+    console.log(anchor);
+    anchor.addEventListener('click', e => alert('You do not have permission to access this part of the site.  Boolean thunder error 55-63d.'))});
+
+
+
+
 
 let aboveParaSelector = document.querySelector('.abovepara');
 aboveParaSelector.addEventListener('mouseover', (e) => {
@@ -32,12 +36,12 @@ aboveParaSelector.addEventListener('click', (e) => {
 let modoSelector = document.querySelector('.modo')
 modoSelector.addEventListener('mouseover', (e) => {
     TweenMax.to(e.target, 5,{marginRight: 0});
-    TweenMax.to(e.target, 5, {marginLeft: 300});
+    TweenMax.to(e.target, 5, {marginLeft: 250});
     
 });
 modoSelector.addEventListener('click', (e) => {
-    TweenMax.to(e.target, 5,{marginLeft: 0});
-    TweenMax.to(e.target, 5, {marginRight: 300});
+    TweenMax.to(e.target, 2, {marginLeft: 0});
+    TweenMax.to(e.target, 2, {marginRight: 250});
    
 });
 
@@ -67,7 +71,7 @@ function sweepStakesOnce() {
     picparaSelector.removeEventListener('click', sweepstakes);
 }
 
-picparaSelector.addEventListener('click', sweepstakes)
+picparaSelector.addEventListener('click', sweepstakes);
 
 
 class PlaceButton {

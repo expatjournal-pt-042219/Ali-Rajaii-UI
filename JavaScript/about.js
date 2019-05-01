@@ -12,7 +12,7 @@ anchorSelector1Alert.push(anchorSelector1[3]);
 anchorSelector1Alert.push(anchorSelector1[4]);
 console.log(anchorSelector1Alert);
 anchorSelector1Alert.map(a => {
-    a.addEventListener('click', e => alert('You do not have permission to access this part of the site.  Boolean thunder error 55-63d.  Contact adminstration for further assistance.'))
+    a.addEventListener('click', e => alert('You do not have permission to access this part of the site.  Boolean thunder error 55-63d.'))
 })
 
 
