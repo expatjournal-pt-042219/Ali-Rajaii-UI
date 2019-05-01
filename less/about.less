@@ -1,5 +1,5 @@
 .teamIntro {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-top: 100px;
     margin-bottom: 100px;
 
@@ -8,21 +8,116 @@
     }
 }
 .teamTable {
+    //display: flex;
+    //justify-content: center;
     background-color: white;
     width: 500px;
+
+    @media @mobile {
+        width: 100%;
+    }
     h3 {
-        font-size: 2rem;
+        font-size: 4rem;
         margin-bottom: 20px;
+        @media @desktop {
+            font-size: 3rem;
+        }
+        @media @mobile {
+            font-size: 3rem;
+        }
     }
     h5 {
-        font-size: 2rem;
+        font-size: 4rem;
         margin-bottom: 10px;
         margin-top: 10px;
+        @media @desktop {
+            font-size: 2.5rem;
+        }
+        @media @mobile {
+            font-size: 2.5rem;
+        }
     }
     li {
-        font-size: 1.75rem;
+        font-size: 3.5rem;
+        padding-left: 25px; 
+        @media @desktop {
+            font-size: 2rem;
+        }
+        @media @mobile {
+            font-size: 2rem;
+        }
     }
-    ul.square {
-        list-style: square;
+    
+    ul li {
+    list-style: square inside;
+    margin-left: 20px;
+    padding-left: 0px;
+    }
+    
+}
+
+
+.ourlinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    .linktext {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        @media @mobile {
+            font-size: 2.5rem;
+        }
+    }
+    a {
+        text-align: center;
+        font-size: 3rem;
+        color: white;
+        @media @mobile {
+            font-size: 2.5rem;
+        }
+    }
+}
+.symbolwrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    @media @desktop {
+        width: 100%;
+    }
+    @media @mobile {
+        width: 100%;
+    }
+
+}
+
+.lambda1 img {
+    width: 450px;
+    height: 500px;
+    @media @desktop {
+        width: 300px;
+        height: 300px;
+    }
+    @media @tablet {
+        display: none;
+    }
+}
+.lambda2 img {
+    width: 450px;
+    height: 500px;
+    @media @desktop {
+        width: 300px;
+        height: 300px;
+    }
+    @media @tablet {
+        display: none;
+    }
+}
+
+.copyright p {
+    @media @mobile {
+        font-size: 2rem;
     }
 }

@@ -5,13 +5,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ExpatHub | Home</title>
+  <title>Ex.com | Home</title>
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
-  <script src="./JavaScript/index.js"></script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
+  
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,7 +22,7 @@
     <body>
       <div class="top"></div>
         <header class='homeheader'>
-            <nav>
+            <nav class='topanchorset'>
                 <a href="./index.html">Home</a>
                 <a href="./about.html">About</a>
                 <a href="#">Travels</a>
@@ -31,65 +31,88 @@
             
             </nav>
 
-            <nav class="homeheader1">
-              <a href='./login.html'>Log In</a>
-              <a href='./signup.html'>Sign Up!</a>
+            <nav class="bottomanchorset">
+              <a href='https://expat-lambda.herokuapp.com/'>Log In</a>
+              <a href='https://expat-lambda.herokuapp.com/'>Sign Up!</a>
             </nav>
         </header>
-
-        <div class='main-text'>
-        <div class="modo">
-            <h3>Log Your Adventures in a Professional Format With ExpatHub</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="abovepara">Scroll down for an exquisite Expat.com preview, and then sign up!</div>
+    <div class="parralax1">
+        <div class='modo'>
+            <h3>Log Your Adventures in a Professional Format With Ex.com</h3>
+            <!--  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
         </div>
+    </div>
 
-        <div class="picpara">
+    <div class='midsect'>
             <h3>Exquisite photo posting for your professional expat journeys!</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            <p>Coming from a group of remote software engineers, we can fully identify with the need to have a professional platform to post your expatraition journey pictures and stories.  In today's gig-economy, as well as with the rise of the remote workplace, we all have to come to the decision at some point whether we want to take that leap of faith and become an expat.  If this is a choice you have made then rest assured that you can trust Ex.com with all of your professional/adventurous social media needs.  We do not limit your posts, nor do we have the unprofessional bells and whistles of your normal social media. Join us today, and help us spread the love of life that comes with expatriation! </p>
+    </div>
 
-        <div class='adventure'>
-            <img src="img/pexels-expat-adventure-photo.jpeg">
+    <div class="parralax2">
+        <div class="picpara" >
+            <p>Traveling the globe and experiencing life's beauties. Click here for a chance to win a cruise!</p> 
         </div>
-             
-        <div class='essence'>
-       <p>Traveling the globe and experiencing life's beauties.</p> 
-        <img class="worldPic" src="img/photo-1554446977-558193aaeb5b.jpg">
+    </div>
+
+    <div class="parralax3">
+        <div class="adventure" >
+            <p>Just enjoy the way of the expat, and lovingly log your travels and pictures with Ex.com.</p> 
         </div>
+    </div>
 
         <div class='choose'>
-                <p>Choose Your Region</p>
-            </div>  
-        <div class='maps'>  
-            
-            <div class="northAmerica">
-                <img src="./img/north america.jpg">
-            </div>
-           
-            <div class="southAmerica">
-                <img src="./img/south america.jpg">
-            </div>
-
-            <div class="europe">
-                 <img src="./img/europe.jpeg">
-            </div>
-
-            <div class="africa">
-                <img src="./img/africa.jpg">
-            </div>
-
-            <div class="asia">
-                <img src="./img/asia.jpg">
-            </div>
-
-            <div class="australia">
-                <img src="./img/australia.jpg">   
-            </div>
-
-            <div class="antarctica">
-                <img src="./img/antarctica.jpg">  
-            </div>
+            Choose Your region
         </div>
+        <div class='choiceContainer'>
+            <div class='button active-button' data-place='all'>All</div>
+            <div class='button' data-place='na'>North America</div>
+            <div class='button' data-place='sa'>South America</div>
+            <div class='button' data-place='euro'>Europe</div>
+            <div class='button' data-place='afro'>Africa</div>
+            <div class='button' data-place='asia'>Asia</div>
+            <div class='button' data-place='austro'>Australia</div>
+            <div class='button' data-place='ant'>Antarctica</div>
 
+        </div>
+    
+<div class='maps'>  
+
+            
+    <div class="map" data-place='na'>
+        <img src="./img/north america.jpg">
+    </div>
+   
+    <div class="map" data-place='sa'>
+        <img src="./img/south america.jpg">
+    </div>
+
+    <div class="map" data-place='euro'>
+         <img src="./img/europe.jpeg">
+    </div>
+
+    <div class="map" data-place='afro'>
+        <img src="./img/africa.jpg">
+    </div>
+
+    <div class="map" data-place='asia'>
+        <img src="./img/asia.jpg">
+    </div>
+
+    <div class="map" data-place='austro'>
+        <img src="./img/australia.jpg">   
+    </div>
+
+    <div class="map" data-place='ant'>
+        <img src="./img/antarctica.jpg">  
+    </div>
+</div>
+
+
+
+    <div class='copyright'>
+        <p>Copyright 2019 Ex.com</p>
+    </div>
     </body>
 </div>
+
